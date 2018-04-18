@@ -45,6 +45,21 @@ class ViewController: UIViewController {
         department?.addToEmployees(employees as NSSet)
     }
     
+    @IBAction func btnFetch(_ sender: UIButton) {
+        let employees = EmployeeMO.getAllEmployees()
+        if employees.count == 0 {
+            print("No employee found")
+            return
+        }
+        for employee in employees {
+            print("Employee name: \(employee.name ?? "")")
+        }
+    }
+    
+    @IBAction func btnDelete(_ sender: UIButton) {
+        EmployeeMO.deleteAllEmployees()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

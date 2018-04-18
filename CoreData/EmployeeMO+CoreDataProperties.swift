@@ -42,4 +42,33 @@ extension EmployeeMO {
         return employee
     }
     
+    static func getAllEmployees() -> [EmployeeMO] {
+        var result = [EmployeeMO]()
+        let moc = AppDelegate.managedObjectContext
+        do {
+            result = try moc!.fetch(EmployeeMO.fetchRequest()) as! [EmployeeMO]
+        } catch {
+            print("Cannot fetch employees. Error \(error)")
+            return result
+        }
+        return result
+    }
+    
+    static func deleteAllEmployees() -> Bool {
+        let moc = AppDelegate.managedObjectContext
+        let employees = EmployeeMO.getAllEmployees()
+        for employee in employees {
+            moc?.delete(employee)
+        }
+        do {
+            try AppDelegate.managedObjectContext?.save()
+        } catch {
+            let nserror = error as NSError
+            print("Delete all employees failed. Error: \(nserror), \(nserror.userInfo)")
+            return false
+        }
+        print("Delete all employees successful")
+        return true
+    }
+    
 }
