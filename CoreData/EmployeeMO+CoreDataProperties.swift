@@ -71,4 +71,8 @@ extension EmployeeMO {
         return true
     }
     
+    func toString() {
+        print("Employee details. Name: \(name ?? ""), identifier: \(identifier ?? ""), isManager: \(isManager), title: \(title ?? "")")
+    }
+    
 }
