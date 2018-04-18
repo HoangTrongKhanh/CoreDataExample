@@ -19,6 +19,7 @@
 		1843872B2087789800FFF7A5 /* EmployeeMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184387252087789800FFF7A5 /* EmployeeMO+CoreDataProperties.swift */; };
 		1843872C2087789800FFF7A5 /* DepartmentMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184387262087789800FFF7A5 /* DepartmentMO+CoreDataClass.swift */; };
 		1843872D2087789800FFF7A5 /* DepartmentMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184387272087789800FFF7A5 /* DepartmentMO+CoreDataProperties.swift */; };
+		18671A142087846A00BAE831 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18671A132087846A00BAE831 /* NSDate+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		184387252087789800FFF7A5 /* EmployeeMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmployeeMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		184387262087789800FFF7A5 /* DepartmentMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DepartmentMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		184387272087789800FFF7A5 /* DepartmentMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DepartmentMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		18671A132087846A00BAE831 /* NSDate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		1843870C2087753D00FFF7A5 /* CoreDataExample */ = {
 			isa = PBXGroup;
 			children = (
+				18671A132087846A00BAE831 /* NSDate+Extension.swift */,
 				1843870D2087753D00FFF7A5 /* AppDelegate.swift */,
 				1843870F2087753D00FFF7A5 /* ViewController.swift */,
 				184387112087753D00FFF7A5 /* Main.storyboard */,
@@ -168,6 +171,7 @@
 				1843872B2087789800FFF7A5 /* EmployeeMO+CoreDataProperties.swift in Sources */,
 				1843870E2087753D00FFF7A5 /* AppDelegate.swift in Sources */,
 				184387282087789800FFF7A5 /* PersonMO+CoreDataClass.swift in Sources */,
+				18671A142087846A00BAE831 /* NSDate+Extension.swift in Sources */,
 				184387292087789800FFF7A5 /* PersonMO+CoreDataProperties.swift in Sources */,
 				184387162087753D00FFF7A5 /* CoreDataExample.xcdatamodeld in Sources */,
 				1843872C2087789800FFF7A5 /* DepartmentMO+CoreDataClass.swift in Sources */,
